@@ -1,0 +1,60 @@
+:root {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #14213d;
+  background-color: #e8eaf0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.main-dashboard-stat {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.main-dashboard-stat:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(29, 53, 87, 0.12);
+}
+
+.main-dashboard-action {
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.main-dashboard-action:hover {
+  background: #f4f7fc;
+  border-color: #9eb8d4;
+  transform: translateY(-1px);
+}
+
+.main-dashboard-tile {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.main-dashboard-tile:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 18px 40px rgba(29, 53, 87, 0.22);
+}
